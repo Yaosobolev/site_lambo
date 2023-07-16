@@ -22,6 +22,11 @@ a {
 li {
     list-style: none;
 }
+
+img {
+    max-width: 100%;
+}
+
 :root {
   --white: #fff;
   --black: #040404;
@@ -573,6 +578,13 @@ body {
    
 }
 
+@media (max-width: 969px) {
+    .evo-white__inner::after {
+        display: none;
+    }
+    
+}
+
 @media (max-width: 880px) {
     .menu-btn {
         display: flex;
@@ -620,8 +632,57 @@ body {
     .logo {
         z-index: 10;
     }
+
+    /* info */
+
+    .info__part-textbox {
+        display: block;
+
+        padding-bottom: 15px;
+    }
+
+    .info__part{
+        display: block;
+    }
+
+    .info__part--second .info__text,
+    .info__part--third .info__text {
+        max-width: 100%;
+    }
+
+    .info__table {
+        width: 100%;
+    }
+
+    .info__part-img {
+        width: 100%;
+    }
 }
 
+
+
+@media (max-width: 709px) {
+    .evo-white__inner::before {
+        display: none;
+    }
+
+    .evo__descr-list {
+        display: block;
+        text-align: center;
+    }
+
+    .evo__descr-list div {
+        margin-bottom: 15px;
+    }
+
+    .evo-black__info {
+        display: block;
+    }
+    .evo-black__title {
+        margin-bottom: 20px;
+    }
+  
+}
 @media (max-width: 560px) {
     .promo__title {
         font-size: 48px;
@@ -632,6 +693,14 @@ body {
     .promo__subtitle span{
         font-size: 26px;
     }
+
+    .info__table td:nth-child(2) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .evo-black__inner::after {
+        display: none;
+    }
 }
 @media (max-width: 340px) {
     .promo__title {
@@ -640,6 +709,10 @@ body {
     .promo__subtitle {
         font-size: 30px;
     }
+   
+}
+@media (max-width: 320px) {
+    
 
     .menu__link {
         padding: 15px 0;
